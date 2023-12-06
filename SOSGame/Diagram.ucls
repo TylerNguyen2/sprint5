@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="SOSGUI.TestThread" project="SOSGame" file="/SOSGame/src/SOSGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="127" x="86" y="529"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="SOSGUI" project="SOSGame" file="/SOSGame/src/SOSGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="387" width="172" x="170" y="102"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="SOSGUI.SOSGameBoard" project="SOSGame" file="/SOSGame/src/SOSGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="178" x="253" y="529"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="4" language="java" name="SOSGame.Cell" project="SOSGame" file="/SOSGame/src/SOSGame.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="119" x="635" y="540"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="5" language="java" name="SOSGame.GameType" project="SOSGame" file="/SOSGame/src/SOSGame.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="121" x="794" y="540"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="6" language="java" name="SOSGame" project="SOSGame" file="/SOSGame/src/SOSGame.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="585" width="236" x="794" y="-85"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="7" language="java" name="SOSGame.GameState" project="SOSGame" file="/SOSGame/src/SOSGame.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="142" x="955" y="540"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="8" language="java" name="SOSTesting" project="SOSGame" file="/SOSGame/src/SOSTesting.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="423" width="197" x="1131" y="-31"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="9">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="10" name="currentGameState"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="12">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="13" name="game"/>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="15">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <nesting id="16">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </nesting>  
+  <association id="17">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="18" name="game"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="20">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </nesting>  
+  <nesting id="21">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <association id="22">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="23" name="SOSGameBoard"/>      
+      <multiplicity id="24" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="25">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="26" name="grid"/>      
+      <multiplicity id="27" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="28">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </nesting>  
+  <association id="29">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="30" name="currentGameType"/>      
+      <multiplicity id="31" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="32">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="33" name="gui"/>      
+      <multiplicity id="34" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
